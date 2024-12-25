@@ -1,0 +1,16 @@
+name: Fetch Overleaf resume
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Daily at midnight
+  workflow_dispatch:
+
+jobs:
+  fetch-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch PDF from Overleaf
+        uses: Sbrjt/overleaf-resume-downloader@v1
+        with:
+          overleaf_url: 'https://www.overleaf.com/read/nsgsskwncdmy#a859ac'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
