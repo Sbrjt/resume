@@ -7,6 +7,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{fontawesome5}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -19,6 +20,8 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+\usepackage{multicol}
+\usepackage{parskip}
 
 
 %----------FONT OPTIONS----------
@@ -40,11 +43,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.2in}
-\addtolength{\textwidth}{0.4in}
-%\addtolength{\evensidemargin}{0in}
-\addtolength{\topmargin}{-0.2in}
-\addtolength{\textheight}{1in}
+\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.4in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -54,7 +57,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-\vspace{10pt}\scshape\raggedright\large
+\vspace{2pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -64,7 +67,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
 \item\small{
-{#1 \vspace{-2pt}}
+{#1 \vspace{-5pt}}
 }
 }
 
@@ -87,17 +90,18 @@
 \item
 \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 \small#1 & #2 \\
-\end{tabular*}\vspace{-7pt}
+\end{tabular*}\vspace{0pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{3pt}}
+
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
 
 %-------------------------------------------
 %%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,11 +112,29 @@
 %----------HEADING----------
 
 \begin{center}
-\textbf{\Huge \scshape Shubhrajit Sadhukhan} \\ \vspace{1pt}
-\small 8240687299 $|$ \href{mailto:shubhrajit.2023ug3007@iiitranchi.ac.in}{shubhrajit.2023ug3007@iiitranchi.ac.in} $|$
-\href{https://linkedin.com/in/shubhrajit-sadhukhan}{linkedin.com/in/shubhrajit-sadhukhan} $|$
-\href{https://github.com/Sbrjt}{github.com/Sbrjt}
+\textbf{\Huge \scshape Shubhrajit Sadhukhan} \\ \vspace{5pt}
+\small \seticon{faPhone} \ \ 8240687299 \ \ \ \ \ \faEnvelope \ \ \href{mailto:shubhrajit.2023ug3007@iiitranchi.ac.in}{shubhrajit.2023ug3007@iiitranchi.ac.in} \\
+\vspace{3pt}
+\faLinkedin \ \ \href{https://linkedin.com/in/shubhrajit-sadhukhan}{linkedin.com/in/shubhrajit-sadhukhan} \ \ \ \ \
+\faGithub \ \ \href{https://github.com/Sbrjt}{github.com/Sbrjt} \ \ \ \ \
+\faLink \ \ \href{https://sbrjt.github.io/}{Portfolio}
 \end{center}
+
+\begin{comment}
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{\Huge \scshape Shubhrajit \\ Sadhukhan} \\
+\href{https://sbrjt.github.io/}{sbrjt.github.io}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\raggedleft
+\small
+\faPhone\ 8240687299 \\
+\faEnvelope \ \href{mailto:shubhrajit.2023ug3007@iiitranchi.ac.in}{shubhrajit.2023ug3007@iiitranchi.ac.in} \\
+\faLinkedin \ \ \href{https://linkedin.com/in/shubhrajit-sadhukhan}{linkedin.com/in/shubhrajit-sadhukhan} \\
+\faGithub \ \href{https://github.com/Sbrjt}{github.com/Sbrjt}
+\end{minipage}
+\end{comment}
 
 %-----------EDUCATION-----------
 %(with Specialization of Data Science and Artificial Intelligence)
@@ -195,10 +217,17 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
 \textbf{Languages}{: Python, JavaScript, HTML, CSS, SQL} \\
-\textbf{Frameworks}{: Express.js, Bootstrap, Mongoose} \\
+\textbf{Frameworks}{: Express.js, Bootstrap, Mongoose, Next.js} \\
 \textbf{Libraries}{: React, React Native, NumPy, Matplotlib} \\
 \textbf{Developer Tools}{: Git, Docker, Firebase, Github Actions }
 }}
+\end{itemize}
+
+
+%-----------Extras-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in]
+\item \small{2 stars in \href{https://www.codechef.com/users/sbrjt}{CodeChef}}
 \end{itemize}
 
 
