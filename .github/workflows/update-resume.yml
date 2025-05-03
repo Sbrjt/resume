@@ -12,7 +12,7 @@ jobs:
   fetch-pdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: Sbrjt/overleaf-resume-downloader@v1
+      - uses: Sbrjt/overleaf-resume-downloader@main
         with:
           overleaf_url: 'https://www.overleaf.com/read/nsgsskwncdmy#a859ac' # also change the iframe src in index.html 
           github_token: ${{ secrets.GITHUB_TOKEN }}
