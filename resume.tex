@@ -57,7 +57,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{2pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -170,9 +170,10 @@
       {Smart India Hackathon}{Oct 2024}
       {Government organized hackathon}{}
       \resumeItemListStart
-        \resumeItem{Our team made a healthcare management system to streamline hospital operations and enhance patient care}
-        \resumeItem{Managed Firebase for backend services like hosting, authentication and cloud functions}
-        \resumeItem{Built the flagship feature: an e-prescription system for doctors that automatically generates PDFs and adds prescription data to patient records}
+        \resumeItem{Collaborated in a 6-member team to develop a healthcare management system that streamlined hospital operations and improved patient care.}
+        \resumeItem{Managed Firebase for backend services like hosting, authentication and cloud functions.}
+        \resumeItem{Built the flagship e-prescription feature featuring searchable medicine database, dosage input, automated PDF generation, and integration with patient records.}
+         \resumeItem{Delivered a functional prototype in under 24 hours, leading to the team being shortlisted at the college level.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -186,10 +187,14 @@
           \resumeItemListStart
             \resumeItem{Developed a web application to connect food donors with NGOs or individuals in need}
             \resumeItem{Utilized Mapbox for an intuitive map interface enabling donors to easily drop their location and details on map and NGOs to see donors within their vicinity}
-            \resumeItem{Used web-push to send push notifications of nearby donations instantly}
+            \begin{comment}
+            \resumeItem{Implemented mobile-based PIN authentication and reverse geocoding for enhanced user experience}
+            \end{comment}
+            \resumeItem{Used Web Push API and geospatial queries in MongoDB to send real-time notifications of nearby donations}
+            \resumeItem{Deployed on Render with 100\% uptime, zero cold starts, CDN-backed frontend, scalable backend services, and auto-deploy on push via GitHub}
           \resumeItemListEnd
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/Sbrjt/overleaf-resume-downloader}{\href{}{\underline{Overleaf Resume Syncer}}}}  $|$ \emph{Github Actions, Python, Selenium}}{2025}
+          {\textbf{\href{https://github.com/marketplace/actions/auto-download-resume-from-overleaf}{\href{}{\underline{Overleaf Resume Syncer}}}}  $|$ \emph{Github Actions, Python, Selenium}}{2025}
           \resumeItemListStart
             \resumeItem{Built a Github Action to auto-sync and publish resume pdfs from Overleaf}
             \resumeItem{Published the workflow as a composite action to allow easy reuse in other repos}
@@ -199,19 +204,20 @@
           {\textbf{\href{https://github.com/Sbrjt/josaa-cutoffs}{\href{}{\underline{College Predictor}}}} $|$ \emph{HTML, Bootstrap, Javascript, SQLite, Web scrapping}}{2024}
           \resumeItemListStart
             \resumeItem{Crafted a user-friendly website to display JEE cutoffs with custom filters}
-            \resumeItem{Scrapped the data from official website, imported it into a local SQLite database and queried it using sql.js}
-            \resumeItem{Achieved around 3000 users during May-June 2024, with an average engagement time of 2 minutes (according to Google Analytics)}
+            \resumeItem{Scraped and processed 10,000+ entries from the official JoSAA website and stored them in a local sqLite database}
+            \resumeItem{Enabled client-side querying with sql.js, delivering instant results with zero server load}
+            \resumeItem{Attracted ~3000 users during May-June 2024, with an average engagement time of 2 minutes (according to Google Analytics)}
           \resumeItemListEnd
-          
+
+\begin{comment}
         \resumeProjectHeading
           {\textbf{\href{https://github.com/Sbrjt/Chatbot}{\href{}{\underline{cli Chatbot}}}}  $|$ \emph{OpenAI API, Node.js}}{2023}
           \resumeItemListStart
             \resumeItem{Used OpenAI api to generate responses based on user input using the gpt-3.5-turbo model}
             \resumeItem{It maintains a chat history to provide contextually relevant responses}
           \resumeItemListEnd
+\end{comment}
     \resumeSubHeadingListEnd
-
-
 
 %
 %-----------PROGRAMMING SKILLS-----------
@@ -225,11 +231,12 @@
     }}
  \end{itemize}
 
-
 %-----------Extras-----------
 \section{Achievements}
-\begin{itemize}[leftmargin=0.15in]
-    \item \small{2 stars in  \href{https://www.codechef.com/users/sbrjt}{CodeChef}}
+\begin{itemize}[leftmargin=0.15in, itemsep=-5pt]
+    \item \small{Earned 2 stars rating on \href{https://www.codechef.com/users/sbrjt}{CodeChef}, demonstrating proficiency in competitive programming }
+    \item \small{Solved 150+ problems on \href{https://leetcode.com/u/user1484IW/}{LeetCode}, showcasing strong problem-solving skills and algorithmic thinking}
+    \item \small{Secured 38th college rank in Naukri's EROH Contest}
 \end{itemize}
 
 
