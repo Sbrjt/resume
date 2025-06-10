@@ -14,5 +14,6 @@ jobs:
     steps:
       - uses: Sbrjt/overleaf-resume-downloader@main
         with:
-          overleaf_url: 'https://www.overleaf.com/read/nsgsskwncdmy#a859ac' # also change the iframe src in index.html 
+          overleaf_url: 'https://www.overleaf.com/read/nsgsskwncdmy#a859ac'
+          gdrive_link: 'https://drive.google.com/file/d/17E9HqUxaU0sn_9NjeAhz6ck2GKRhyHcm/view?usp=drive_link'
           github_token: ${{ secrets.GITHUB_TOKEN }}
