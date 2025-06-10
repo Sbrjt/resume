@@ -12,7 +12,7 @@ jobs:
   fetch-pdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: Sbrjt/overleaf-resume-downloader@main
+      - uses: Sbrjt/overleaf-resume-syncer@main
         with:
           overleaf_url: 'https://www.overleaf.com/read/nsgsskwncdmy#a859ac'
           gdrive_link: 'https://drive.google.com/file/d/17E9HqUxaU0sn_9NjeAhz6ck2GKRhyHcm/view?usp=drive_link'
