@@ -46,7 +46,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 %\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.4in}
 \addtolength{\textheight}{5in}
 
 \urlstyle{same}
@@ -58,7 +58,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -102,6 +102,7 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{3pt}}
 
 \newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+\newcommand{\livelink}[1]{\href{#1}{Live~\faIcon{external-link-alt}}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,8 +150,6 @@
       {CBSE 10+2}{2011 -- 2023}
   \resumeSubHeadingListEnd
 
-
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -159,10 +158,11 @@
       {Full-Stack Developer Intern}{June 2025 -- Present}
       {Frondeur Labs}{Remote}
       \resumeItemListStart
-        \resumeItem{Built a modern, responsive dashboard using Next.js and shadcn enabling clients to launch and monitor security assessments}
-        \resumeItem{Managed and containerized backend services using Docker and FastAPI, providing a scalable runtime for cyber security tools and ML models}
+        \resumeItem{Built a modern, responsive dashboard using Next.js and shadcn enabling clients to launch and monitor cybersecurity assessments}
+        \resumeItem{Designed and containerized backend services using FastAPI and Docker, providing a scalable runtime for cyber threat analysis tools and ML models}
       \resumeItemListEnd
 
+\begin{comment}
     \resumeSubheading
       {Smart India Hackathon}{Oct 2024}
       {Government organized hackathon}{}
@@ -173,13 +173,15 @@
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
+\end{comment}
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/Sbrjt/mealmap}{\href{}{\underline{MealMap}}}}  $|$ \emph{Express, MongoDB, Next, Mapbox}}{2025}
+          {\textbf{\href{https://github.com/Sbrjt/mealmap}{\underline{MealMap}}}  $|$ \livelink{https://meal-map-sbrjts-projects.vercel.app/}
+   $|$  \emph{Express, MongoDB, Next, Mapbox}}{2025}
           \resumeItemListStart
             \resumeItem{Developed a web application to connect food donors with NGOs or individuals in need}
             \resumeItem{Utilized Mapbox for an intuitive map interface enabling donors to easily drop their location and details on map and NGOs to see donors within their vicinity}
@@ -196,22 +198,20 @@
              \resumeItem{Reduced action runtime by 50\% by diffing latex source file and caching python dependencies}
           \resumeItemListEnd
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/Sbrjt/josaa-cutoffs}{\href{}{\underline{College Predictor}}}} $|$ \emph{HTML, Bootstrap, Javascript, SQLite, Web scrapping}}{2024}
+          {\textbf{\href{https://github.com/Sbrjt/josaa-cutoffs}{\href{}{\underline{College Predictor}}}}  $|$ \livelink{https://sbrjt.github.io/josaa-cutoffs/} $|$  \emph{HTML, Bootstrap, Javascript, SQLite, Web scraping}}{2024}
           \resumeItemListStart
             \resumeItem{Crafted a user-friendly website to display JEE cutoffs with custom filters}
             \resumeItem{Scraped and processed 10,000+ entries from the official JoSAA website and stored them in a local sqLite database}
             \resumeItem{Enabled client-side querying with sql.js, delivering instant results with zero server load}
-            \resumeItem{Attracted ~3000 users during May-June 2024, with an average engagement time of 2 minutes (according to Google Analytics)}
+            \resumeItem{Attracted $\sim$ 3000 users during May-June 2024, with an average engagement time of 2 minutes (according to Google Analytics)}
           \resumeItemListEnd
 
-\begin{comment}
         \resumeProjectHeading
           {\textbf{\href{https://github.com/Sbrjt/Chatbot}{\href{}{\underline{cli Chatbot}}}}  $|$ \emph{OpenAI API, Node.js}}{2023}
           \resumeItemListStart
             \resumeItem{Used OpenAI api to generate responses based on user input using the gpt-3.5-turbo model}
             \resumeItem{It maintains a chat history to provide contextually relevant responses}
           \resumeItemListEnd
-\end{comment}
     \resumeSubHeadingListEnd
 
 %
@@ -220,17 +220,18 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, JavaScript, HTML, CSS, SQL} \\
-     \textbf{Frameworks}{: Express.js, Bootstrap, Mongoose, Next.js} \\
+     \textbf{Frameworks}{: Express.js, FastAPI, Tailwind, Mongoose, Next.js} \\
      \textbf{Libraries}{: React, React Native, NumPy, Matplotlib} \\
-     \textbf{Developer Tools}{: Git, Docker, Firebase, Github Actions }
+     \textbf{Developer Tools}{: Git, Docker, Github Actions, Firebase }
     }}
  \end{itemize}
 
 %-----------Extras-----------
 \section{Achievements}
 \begin{itemize}[leftmargin=0.15in, itemsep=-5pt]
+     \item \small{Participated in Smart India Hackathon 2024 and got shortlisted at college level}
     \item \small{Earned 3 stars rating on \href{https://www.codechef.com/users/sbrjt}{CodeChef} and solved 150+ problems on \href{https://leetcode.com/u/user1484IW/}{LeetCode}}
-    \item \small{590 reps on \href{https://stackoverflow.com/users/14313852/shub}{Stack Overflow} with active contributions}
+    \item \small{600+ reps on \href{https://stackoverflow.com/users/14313852/shub}{Stack Overflow} with active contributions}
 \end{itemize}
 
 
