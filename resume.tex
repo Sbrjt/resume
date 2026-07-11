@@ -46,7 +46,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 %\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.4in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{5in}
 
 \urlstyle{same}
@@ -113,10 +113,9 @@
 %----------HEADING----------
 
 \begin{center}
-    \textbf{\Huge \scshape Shubhrajit Sadhukhan} \\ \vspace{5pt}
-    \small \seticon{faPhone} \ \ 8240687299 \ \ \ \ \ \faEnvelope \ \  \href{mailto:shubhrajit.2023ug3007@iiitranchi.ac.in}{shubhrajit.2023ug3007@iiitranchi.ac.in} \\ 
-    \vspace{3pt}
-    \faLinkedin \ \ \href{https://linkedin.com/in/shubhrajit-sadhukhan}{linkedin.com/in/shubhrajit-sadhukhan} \ \ \ \ \ 
+    \textbf{\Huge \scshape Shubhrajit Sadhukhan} \\ \vspace{8pt}
+    \footnotesize  \seticon{faPhone} \ \ 8240687299 \ \ \ \ \ \faEnvelope \ \  \href{mailto:shubhrajit.me@gmail.com}{shubhrajit.me@gmail.com} \ \ \ \ \ 
+    \faLinkedin \ \ \href{https://linkedin.com/in/shubhrajit-sadhukhan}{linkedin.com} \ \ \ \ \ 
     \faGithub \ \ \href{https://github.com/Sbrjt}{github.com/Sbrjt} 	\ \ \ \ \ 
     \faLink \ \ \href{https://sbrjt.github.io/}{Portfolio}
 \end{center}
@@ -144,22 +143,32 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Indian Institute of Information Technology, Ranchi}{Ranchi, India}
-      {Bachelor of Technology in Computer Science and Engineering (AI \& DS); CGPA 9}{2023 -- 2027}
-    \resumeSubheading
-      {Army Public School, Barrackpore}{Kolkata, India}
-      {CBSE 10+2}{2011 -- 2023}
+      {Bachelor of Technology in Computer Science and Engineering (DS \& AI); CGPA 8.8}{2023 -- 2027}
+    % \resumeSubheading
+    %   {Army Public School, Barrackpore}{Kolkata, India}
+    %   {CBSE 10+2}{2011 -- 2023}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
+      \resumeSubheading
+      {Full Stack and AI Intern}{Dec 2025 -- Mar 2026}
+      {Frondeur Labs}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built an algorithmic trading platform allowing traders to define custom strategies through a no-code visual rule builder.}
+        \resumeItem{Integrated the Zerodha Kite Connect API for order placement and automated trade execution.}
+        % \resumeItem{Engineered a real-time data pipeline using Zerodha WebSockets to stream market prices, aggregate OHLC candles, and compute technical indicators}
+        \resumeItem{Collaborated directly with the client to gather requirements, clarify edge cases and translate business needs into technical solutions}
+      \resumeItemListEnd
+
     \resumeSubheading
-      {Full-Stack Developer Intern}{June 2025 -- Present}
+      {Full-Stack Developer Intern}{Sep 2025 -- Nov 2025}
       {Frondeur Labs}{Remote}
       \resumeItemListStart
         \resumeItem{Built a modern, responsive dashboard using Next.js and shadcn enabling clients to launch and monitor cybersecurity assessments}
-        \resumeItem{Designed and containerized backend services using FastAPI and Docker, providing a scalable runtime for cyber threat analysis tools and ML models}
+        \resumeItem{Designed and containerized backend services using FastAPI and Docker}
       \resumeItemListEnd
 
 \begin{comment}
@@ -179,37 +188,42 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+    
         \resumeProjectHeading
           {\textbf{\href{https://github.com/Sbrjt/mealmap}{\underline{MealMap}}}  $|$ \livelink{https://meal-map-sbrjts-projects.vercel.app}
-   $|$  \emph{Express, MongoDB, Next, Mapbox}}{2025}
+   $|$  \emph{Express, MongoDB, Next, Mapbox, Zustand}}{2025}
           \resumeItemListStart
             \resumeItem{Developed a web application to connect food donors with NGOs or individuals in need}
             \resumeItem{Utilized Mapbox for an intuitive map interface enabling donors to easily drop their location and details on map and NGOs to see donors within their vicinity}
-            \resumeItem{Implemented google Oauth and mobile-based PIN authentication using AWS SNS}
-            \resumeItem{Used Web Push API and geospatial queries in MongoDB to send real-time notifications of nearby donations}
+            \resumeItem{Implemented Google Oauth and mobile-based PIN authentication using AWS SNS}
+            \resumeItem{Used Web Push API and geospatial index in MongoDB to send real-time notifications of nearby donations}
           \resumeItemListEnd
+
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/marketplace/actions/auto-download-resume-from-overleaf}{\href{}{\underline{Overleaf Resume Syncer}}}}  $|$ \emph{Github Actions, Python, Selenium}}{2025}
+          {\textbf{\href{https://github.com/Sbrjt/leetcode-enhancer}{\href{}{\underline{Leetcode Enhancer}}}}  $|$ \livelink{https://chromewebstore.google.com/detail/leetcode-enhancer/cpoclfijojgjiafnlgnhjalkaiabcjch}  $|$ \emph{WXT, React, Typescript}}{2026}
           \resumeItemListStart
-            \resumeItem{Built a Github Action to auto-sync and publish resume pdfs from Overleaf}
-            \resumeItem{Published the workflow as a composite action to allow easy reuse in other repos}
-             \resumeItem{Reduced action runtime by 50\% by diffing latex source file and caching python dependencies}
+            \resumeItem{Built a cross-browser extension that injects UI enhancements into LeetCode, reaching 150+ users on Chrome Store}
+            \resumeItem{Implemented features including difficulty ratings, restored dislike counts, automatic code formatting, and Monaco Editor patches}
+            \resumeItem{Built a Playwright E2E test suite, to catch breaking changes when LeetCode updates its frontend}
           \resumeItemListEnd
+          
         \resumeProjectHeading
           {\textbf{\href{https://github.com/Sbrjt/josaa-cutoffs}{\href{}{\underline{College Predictor}}}}  $|$ \livelink{https://sbrjt.github.io/josaa-cutoffs/} $|$  \emph{HTML, Bootstrap, Javascript, SQLite, Web scraping}}{2024}
           \resumeItemListStart
             \resumeItem{Crafted a user-friendly website to display JEE cutoffs with custom filters}
             \resumeItem{Scraped and processed 10,000+ entries from the official JoSAA website and stored them in a local sqLite database}
-            \resumeItem{Enabled client-side querying with sql.js, delivering instant results with zero server load}
-            \resumeItem{Attracted $\sim$ 3000 users during May-June 2024, with an average engagement time of 2 minutes (according to Google Analytics)}
+            \resumeItem{Optimized page load performance by vacuuming the db, compressing it, and caching assets with Workbox}
+            \resumeItem{Attracted $\sim$ 3000 users in 2024, with an average engagement time of 2 minutes (according to Google Analytics)}
           \resumeItemListEnd
 
-        \resumeProjectHeading
-          {\textbf{\href{https://github.com/Sbrjt/Chatbot}{\href{}{\underline{cli Chatbot}}}}  $|$ \emph{OpenAI API, Node.js}}{2023}
-          \resumeItemListStart
-            \resumeItem{Used OpenAI api to generate responses based on user input using the gpt-3.5-turbo model}
-            \resumeItem{It maintains a chat history to provide contextually relevant responses}
-          \resumeItemListEnd
+        % \resumeProjectHeading
+        %   {\textbf{\href{https://github.com/Sbrjt/overleaf-resume-syncer}{\href{}{\underline{Overleaf Resume Syncer}}}}  $|$ \livelink{https://github.com/marketplace/actions/auto-download-resume-from-overleaf}  $|$ \emph{Github Actions, Python, Selenium}}{2025}
+        %   \resumeItemListStart
+        %     \resumeItem{Built a Github Action to auto-sync resume pdf from Overleaf to GitHub and Google Drive}
+        %     \resumeItem{Published as a composite action on GitHub Marketplace enabling easy integration into other projects}
+        %     \resumeItem{It fetches the Overleaf pdf using Selenium and uploads files to Google Drive via a service account}
+        %   \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 %
@@ -217,8 +231,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, HTML, CSS, SQL} \\
-     \textbf{Frameworks}{: Express.js, FastAPI, Tailwind, Mongoose, Next.js} \\
+     \textbf{Languages}{: Python, JavaScript, HTML, CSS, SQL, MongoDB, GraphQL} \\
+     \textbf{Frameworks}{: Express.js, FastAPI, Tailwind, Next.js, Playwright, Selenium} \\
      \textbf{Libraries}{: React, React Native, NumPy, Matplotlib} \\
      \textbf{Developer Tools}{: Git, Docker, Github Actions, Firebase }
     }}
@@ -228,8 +242,9 @@
 \section{Achievements}
 \begin{itemize}[leftmargin=0.15in, itemsep=-5pt]
      \item \small{Participated in Smart India Hackathon 2024 and got shortlisted at college level}
-    \item \small{Earned 3 stars rating on \href{https://www.codechef.com/users/sbrjt}{CodeChef} and solved 200+ problems on \href{https://leetcode.com/u/user1484IW/}{LeetCode}}
-    \item \small{600+ reps on \href{https://stackoverflow.com/users/14313852/shub}{Stack Overflow} with active contributions}
+    \item \small{Earned a 3 star rating on \href{https://www.codechef.com/users/sbrjt}{CodeChef} and solved 400+ problems on \href{https://leetcode.com/u/user1484IW/}{LeetCode}}
+    \item \small{650+ reps on \href{https://stackoverflow.com/users/14313852/shub}{Stack Overflow} with active contributions}
+     \item \small{Open-source contributor to \href{https://github.com/BookCatKid/TablissNG/issues?q=author:sbrjt%20is:pr}{TablissNG}, a browser extension with 10K downloads}
 \end{itemize}
 
 
