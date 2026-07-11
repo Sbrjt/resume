@@ -6,14 +6,15 @@ on:
   workflow_dispatch:
   push:
     paths:
-    - .github/workflows/update-resume.yml
+      - .github/workflows/update-resume.yml
 
 jobs:
   fetch-pdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: Sbrjt/overleaf-resume-syncer@main
+      - uses: Sbrjt/overleaf-resume-syncer@v2
         with:
-          overleaf_url: 'https://www.overleaf.com/read/nsgsskwncdmy#a859ac'
-          gdrive_link: 'https://drive.google.com/file/d/17E9HqUxaU0sn_9NjeAhz6ck2GKRhyHcm/view?usp=drive_link'
+          overleaf_url: ${{ vars.OVERLEAF_URL }}
+          gdrive_link: ${{ vars.GDRIVE_LINK }}
+          gdrive_service_account_key: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
