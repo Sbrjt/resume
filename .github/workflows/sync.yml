@@ -1,4 +1,4 @@
-name: fetch-overleaf-resume
+name: Sync Resume
 
 permissions:
   contents: write
@@ -8,7 +8,7 @@ on:
     - cron: '0 0 * * *' # Daily at midnight
   workflow_dispatch:
   push:
-  
+
 jobs:
   fetch-pdf:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
       - uses: Sbrjt/overleaf-resume-syncer@v2
         with:
           overleaf_url: ${{ vars.OVERLEAF_URL }}
-          
+
           # Optional
           gdrive_link: ${{ vars.GDRIVE_LINK }}
           gdrive_service_account_key: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_KEY }}
