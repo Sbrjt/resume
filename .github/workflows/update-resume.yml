@@ -1,20 +1,23 @@
 name: fetch-overleaf-resume
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: '0 0 * * *' # Daily at midnight
   workflow_dispatch:
   push:
-    paths:
-      - .github/workflows/update-resume.yml
-
+  
 jobs:
   fetch-pdf:
     runs-on: ubuntu-latest
     steps:
       - uses: Sbrjt/overleaf-resume-syncer@main
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           overleaf_url: ${{ vars.OVERLEAF_URL }}
+          
+          # Optional
           gdrive_link: ${{ vars.GDRIVE_LINK }}
           gdrive_service_account_key: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
