@@ -13,7 +13,7 @@ jobs:
   fetch-pdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: Sbrjt/overleaf-resume-syncer@main
+      - uses: Sbrjt/overleaf-resume-syncer@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           overleaf_url: ${{ vars.OVERLEAF_URL }}
